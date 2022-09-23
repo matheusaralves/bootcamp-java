@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc1bb5e7-6dba-48e0-8bc8-38fb36f4c265" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exemplo05/Exemplo05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/praticaIntegradora/PraticaIntegradora01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/praticaIntegradora/PraticaIntegradora01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/praticaIntegradora/PraticaIntegradora01.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663867668424</updated>
       <workItem from="1663867672168" duration="6268000" />
-      <workItem from="1663888622947" duration="2248000" />
+      <workItem from="1663888622947" duration="3723000" />
     </task>
     <task id="LOCAL-00001" summary="exemplo02">
       <created>1663870895199</created>

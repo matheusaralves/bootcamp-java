@@ -42,6 +42,6 @@ public class PraticaIntegradora01 {
         }
 
         System.out.println("Hotest town is " + city[highCity]);
-        System.out.println("Colest town is " + city[lowCity]);
+        System.out.println("Coolest town is " + city[lowCity]);
     }
 }
