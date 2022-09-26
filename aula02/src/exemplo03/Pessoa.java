@@ -3,6 +3,7 @@ package exemplo03;
 public class Pessoa {
     private String nome;
 
+    // construtor default
     public Pessoa(){}
 
 

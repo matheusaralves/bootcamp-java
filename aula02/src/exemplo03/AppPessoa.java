@@ -8,6 +8,10 @@ public class AppPessoa {
 
         System.out.println(estudante);
 
+        Pessoa p = new Estudante("João");
+
+        System.out.println(p);
+        System.out.println(p.getNome());
 
 
     }

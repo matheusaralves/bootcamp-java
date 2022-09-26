@@ -10,7 +10,7 @@ public class AppRelogio {
         meuRelogio.exibir();
         outroRelogio.exibir();
 
-        System.out.println("Hira: " + meuRelogio.getHora());
+        System.out.println("Hora: " + meuRelogio.getHora());
         System.out.println("Minuto: " + meuRelogio.getMinuto());
         System.out.println("Segundo: " + meuRelogio.getSegundo());
 
