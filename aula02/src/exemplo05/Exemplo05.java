@@ -5,7 +5,7 @@ public class Exemplo05 {
         int vetor[] = new int[3];
 
         try {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 4; i++) {
                 System.out.println(vetor[i]);
             }
         } catch (ArrayIndexOutOfBoundsException ex) {
