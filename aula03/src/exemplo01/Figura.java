@@ -15,6 +15,8 @@ public abstract class Figura {
     public int getY() {
         return y;
     }
+
+    public abstract void exibir();
 }
 
 
