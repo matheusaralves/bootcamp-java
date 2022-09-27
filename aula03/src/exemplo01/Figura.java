@@ -19,6 +19,7 @@ public abstract class Figura {
     public abstract void exibir();
 
     public abstract String getName();
+    public abstract void show(Imprimir imprimir);
 }
 
 

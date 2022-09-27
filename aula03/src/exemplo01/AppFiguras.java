@@ -20,6 +20,9 @@ public class AppFiguras {
 
         GerarPdf.gerar(vetorFigura[0]);
         GerarPdf.gerar(vetorFigura[2]);
+
+        ExibirTela tela = new ExibirTela();
+        vetorFigura[0].show(tela);
     }
 
 

@@ -16,5 +16,10 @@ public class Quadrado extends Figura{
         return "Quadrado";
     }
 
+    @Override
+    public void show(Imprimir imprimir) {
+        imprimir.exibir("Quadrado");
+    }
+
 
 }

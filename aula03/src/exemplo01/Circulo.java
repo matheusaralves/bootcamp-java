@@ -14,4 +14,9 @@ public class Circulo extends Figura {
     public String getName() {
         return "Círculo";
     }
+
+    @Override
+    public void show(Imprimir imprimir) {
+        imprimir.exibir("Círculo");
+    }
 }
