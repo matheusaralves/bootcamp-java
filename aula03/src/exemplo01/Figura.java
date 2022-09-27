@@ -17,6 +17,8 @@ public abstract class Figura {
     }
 
     public abstract void exibir();
+
+    public abstract String getName();
 }
 
 

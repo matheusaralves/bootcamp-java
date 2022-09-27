@@ -9,4 +9,9 @@ public class Circulo extends Figura {
     public void exibir() {
         System.out.println("Círculo");
     }
+
+    @Override
+    public String getName() {
+        return "Círculo";
+    }
 }

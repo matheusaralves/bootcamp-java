@@ -1,6 +1,6 @@
 package exemplo01;
 
-public class Quadrado extends Figura {
+public class Quadrado extends Figura{
 
     public Quadrado(int x, int y) {
         super(x, y);
@@ -10,4 +10,11 @@ public class Quadrado extends Figura {
     public void exibir() {
         System.out.println("Quadrado");
     }
+
+    @Override
+    public String getName() {
+        return "Quadrado";
+    }
+
+
 }

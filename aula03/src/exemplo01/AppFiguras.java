@@ -12,8 +12,14 @@ public class AppFiguras {
         Figura vetorFigura[] = new Figura[3];
         vetorFigura[0] = new Quadrado(1, 2);
         vetorFigura[1] = new Quadrado(1, 2);
-        vetorFigura[2] = new Quadrado(1, 2);
-        q.exibir();
+        vetorFigura[2] = new Circulo(1, 2);
+
+        for (int i = 0; i < vetorFigura.length; i++) {
+            vetorFigura[i].exibir();
+        }
+
+        GerarPdf.gerar(vetorFigura[0]);
+        GerarPdf.gerar(vetorFigura[2]);
     }
 
 
