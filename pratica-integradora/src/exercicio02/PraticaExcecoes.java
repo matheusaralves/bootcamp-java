@@ -5,12 +5,14 @@ public class PraticaExcecoes {
         int a = 0;
         int b = 300;
 
-        try {
-            System.out.println(b/a);
-        } catch (ArithmeticException ex) {
-            System.out.println("Ocorreu um erro.");
-        } finally {
-            System.out.println("Programa finalizado.");
+        System.out.println(dividir(b, a));
+
+    }
+
+    public static int dividir(int n1, int n2) throws IllegalArgumentException {
+        if (n2 == 0) {
+            throw new IllegalArgumentException("Não é pode ser dividido por zero");
         }
+        return n1 / n2;
     }
 }
