@@ -44,7 +44,7 @@ public class BancoApp {
 
         basico.pgtoServico("Conta de Luz");
         //Simulando uma transação não Ok
-        basico.transacaoNaoOk("Pagar Servço ");
+        basico.transacaoNaoOk("Pagar Serviço ");
 
 
     }
