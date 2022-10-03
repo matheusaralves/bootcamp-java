@@ -30,7 +30,7 @@ public class ProdutoController {
                 .filter(p -> p.getId() == id)
                 .findFirst();
 
-        if(produto.isEmpty()) {
+        if (produto.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         return new ResponseEntity<>(produto.get(), HttpStatus.OK);
@@ -40,7 +40,20 @@ public class ProdutoController {
     public ResponseEntity<Produto> novoProduto(@RequestBody Produto produto) {
         produto.setId(produtos.size() + 1);
         produtos.add(produto);
-        return new ResponseEntity<>(produto, HttpStatus.OK);
-
+        return new ResponseEntity<>(produto, HttpStatus.CREATED);
     }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> delete(@PathVariable int id) {
+        Optional<Produto> produto = produtos.stream()
+                .filter(p -> p.getId() == id)
+                .findFirst();
+
+        if (produto.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        produtos.remove(produto.get());
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
+
 }
