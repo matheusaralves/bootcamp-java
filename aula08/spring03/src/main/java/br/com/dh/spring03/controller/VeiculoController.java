@@ -21,6 +21,9 @@ public class VeiculoController {
     public ResponseEntity<Veiculo> getVeiculo(@PathVariable String placa) {
         Veiculo veiculo = service.getVeiculo(placa);
 
-        return new ResponseEntity<>(veiculo, HttpStatus.OK);
+        if(veiculo != null) {
+            return new ResponseEntity<>(veiculo, HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
