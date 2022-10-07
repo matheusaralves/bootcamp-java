@@ -7,24 +7,25 @@ import org.springframework.stereotype.Repository;
 import java.io.File;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class VeiculoRepo {
     private final String linkFile = "src/main/resources/veiculos.json";
     ObjectMapper mapper = new ObjectMapper();
-
-    public Veiculo getVeiculo(String placa) {
+    public Optional<Veiculo> getVeiculo(String placa) {
         List<Veiculo> veiculos = null;
+
         try {
             veiculos = Arrays.asList(mapper.readValue(new File(linkFile), Veiculo[].class));
-        } catch(Exception ex) {
+        } catch (Exception ex) {
 
         }
-        for(Veiculo v:veiculos){
-            if(v.getPlaca().equals(placa)){
-                return v;
+        for(Veiculo v: veiculos) {
+            if(v.getPlaca().equals(placa)) {
+                return Optional.of(v);
             }
         }
-        return null;
+        return Optional.empty();
     }
 }

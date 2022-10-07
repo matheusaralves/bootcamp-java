@@ -1,5 +1,6 @@
 package br.com.dh.spring03.controller;
 
+import br.com.dh.spring03.exception.VeiculoNotFoundException;
 import br.com.dh.spring03.model.Veiculo;
 import br.com.dh.spring03.service.VeiculoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,16 +15,16 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/veiculos")
 public class VeiculoController {
 
-    @Autowired // injeçao de dependencia (o framework que gera o objeto)
+    @Autowired // injecao de dependencia (O framework gera o objeto)
     private VeiculoService service;
 
     @GetMapping("/{placa}")
-    public ResponseEntity<Veiculo> getVeiculo(@PathVariable String placa) {
-        Veiculo veiculo = service.getVeiculo(placa);
-
-        if(veiculo != null) {
+    public ResponseEntity<Veiculo> getVeiculo(@PathVariable String placa){
+        try {
+            Veiculo veiculo = service.getVeiculo(placa);
             return new ResponseEntity<>(veiculo, HttpStatus.OK);
+        } catch(VeiculoNotFoundException ex) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
