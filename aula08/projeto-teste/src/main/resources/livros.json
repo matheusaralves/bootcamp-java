@@ -1,0 +1,25 @@
+[{
+  "id": 1,
+  "titulo": "Sapiens",
+  "autor": "Yurval Harari",
+  "ano": 2014,
+  "nota": "*****"
+}, {
+  "id": 2,
+  "titulo": "Harry Potter",
+  "autor": "J. K. Rowling",
+  "ano": 1998,
+  "nota": "****"
+}, {
+  "id": 3,
+  "titulo": "A Guerra dos Tronos",
+  "autor": "George R. R. Martin",
+  "ano": 2003,
+  "nota": "*****"
+}, {
+  "id": 4,
+  "titulo": "Hobbit",
+  "autor": "Tolkien",
+  "ano": 1970,
+  "nota": "***"
+}]

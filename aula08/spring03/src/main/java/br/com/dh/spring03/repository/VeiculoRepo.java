@@ -13,6 +13,7 @@ import java.util.Optional;
 public class VeiculoRepo {
     private final String linkFile = "src/main/resources/veiculos.json";
     ObjectMapper mapper = new ObjectMapper();
+
     public Optional<Veiculo> getVeiculo(String placa) {
         List<Veiculo> veiculos = null;
 
@@ -21,8 +22,9 @@ public class VeiculoRepo {
         } catch (Exception ex) {
 
         }
-        for(Veiculo v: veiculos) {
-            if(v.getPlaca().equals(placa)) {
+        assert veiculos != null;
+        for (Veiculo v : veiculos) {
+            if (v.getPlaca().equals(placa)) {
                 return Optional.of(v);
             }
         }
