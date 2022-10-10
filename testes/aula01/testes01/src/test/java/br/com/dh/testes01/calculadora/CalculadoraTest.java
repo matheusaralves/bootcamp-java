@@ -23,7 +23,7 @@ public class CalculadoraTest {
 
     @Test // VALIDANDO A SOMA
     @DisplayName("valida a soma")
-    public void soma_returnDouble_whenValidIput() {
+    public void soma_returnDouble_whenValidInput() {
         // setup
         double n1 = 10;
         double n2 = 20;
