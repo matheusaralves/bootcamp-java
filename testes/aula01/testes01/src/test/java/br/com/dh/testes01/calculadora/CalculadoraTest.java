@@ -24,45 +24,45 @@ public class CalculadoraTest {
     @Test // VALIDANDO A SOMA
     @DisplayName("valida a soma")
     public void soma_returnDouble_whenValidInput() {
-        // setup
+        // setup (Arrange)
         double n1 = 10;
         double n2 = 20;
         double expected = 30;
 
-        // run
+        // run (Act)
         double resp = calculadora.soma(n1, n2);
 
-        // validate
+        // validate (Assert)
         assertEquals(expected, resp);
     }
 
     @Test // VALIDANDO A DIVISÃO
     @DisplayName("valida a divisão")
     public void dividir_returnDouble_whenTwoPositiveNumbers() {
-        // setup
+        // setup (Arrange)
         double n1 = 30;
         double n2 = 3;
         double expected = 10;
 
-        // run
+        // run (Act)
         double resp = calculadora.dividir(n1, n2);
 
-        // validate
+        // validate (Assert)
         assertEquals(expected, resp);
     }
 
     @Test // VALIDANDO O ZERO
     @DisplayName("valida o zero")
     public void dividir_returnZero_whenDivisorEqualsZero() {
-        // setup
+        // setup (Arrange)
         double n1 = 20;
         double n2 = 0;
         double expected = 0;
 
-        // run
+        // run (Act)
         double resp = calculadora.dividir(n1, n2);
 
-        // validate
+        // validate (Assert)
         assertEquals(expected, resp);
     }
 }
